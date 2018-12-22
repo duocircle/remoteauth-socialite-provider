@@ -36,3 +36,31 @@ Append provider values to your `.env` file (you can find them in the RemoteAuth 
 REMOTEAUTH_CLIENT_ID=your_application_id
 REMOTEAUTH_CLIENT_SECRET=your_secret
 ```
+
+### 5. Add Configuration Variables
+
+Append the following configuration values to `config/services.php`:
+
+```
+    'remoteauth' => [
+        'client_id' => env('REMOTEAUTH_CLIENT_ID'),
+        'client_secret' => env('REMOTEAUTH_CLIENT_SECRET'),
+        'redirect' => config('app.url') . '/callback'
+    ]
+```
+
+### 6. Use Test Server
+
+If you are working in a non-production environment, we recommend you use the RemoteAuth sandbox server: https://sandbox.remoteauth.com. You can point the Socialite Provider at the sandbox server via:
+
+```
+// .env
+REMOTEAUTH_URL=https://sandbox.remoteauth.com
+```
+
+```
+// config/services.php
+    'remoteauth' => [
+        'url' => env('REMOTEAUTH_URL')
+    ]
+```
