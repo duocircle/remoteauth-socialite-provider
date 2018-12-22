@@ -1,5 +1,5 @@
 {
-    "name": "socialiteproviders/remoteauth",
+    "name": "owenconti/remoteauth-socialite-provider",
     "description": "RemoteAuth OAuth2 Provider for Laravel Socialite",
     "license": "MIT",
     "authors": [{
