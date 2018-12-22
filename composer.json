@@ -4,7 +4,7 @@
     "license": "MIT",
     "authors": [{
         "name": "Owen Conti",
-        "email": "owen@remoteauth.com",
+        "email": "owen@remoteauth.com"
     }],
     "require": {
         "php": ">=5.5.9",
