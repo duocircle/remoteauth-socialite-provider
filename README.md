@@ -33,8 +33,8 @@ For example:
 Append provider values to your `.env` file (you can find them in the RemoteAuth Applicaton Dashboard):
 
 ```
-REMOTEAUTH_CLIENT_ID=your_application_id
-REMOTEAUTH_CLIENT_SECRET=your_secret
+REMOTEAUTH_CLIENT_ID=your_client_id
+REMOTEAUTH_CLIENT_SECRET=your_client_secret
 ```
 
 ### 5. Add Configuration Variables
