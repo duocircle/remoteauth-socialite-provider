@@ -43,7 +43,7 @@ class Provider extends AbstractProvider implements ProviderInterface
     protected function getUserByToken($token)
     {
         $response = $this->getHttpClient()->get(
-            config('services.remoteauth.url', 'https://app.remoteauth.com') . '/api/v1/user',
+            config('services.remoteauth.url', 'https://app.remoteauth.com') . '/api/v1/users/profile',
             [
                 'headers' => [
                     'Authorization' => 'Bearer '.$token,
